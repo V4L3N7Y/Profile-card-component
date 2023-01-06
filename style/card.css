@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Primary */
+    --Dark-Cyan: hsl(185, 75%, 39%);
+    --Very-Dark-Desaturated-Blue: hsl(229, 23%, 23%);
+    --Dark-Grayish-Blue: hsl(227, 10%, 46%);
+    /* Neutral */
+    --Dark-Gray: hsl(0, 0%, 59%)
+}
+
+
+body {
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--Dark-Cyan);
+    background-image: url("../images/bg-pattern-top.svg"),url("../images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 50vw bottom 50vh, left 50vw top 50vh;
+}
+
+
+.card { 
+    text-align: center;
+    background-color: White;
+    border-radius: 1.5rem;
+    min-width: 300px;
+    min-height: 400px;
+}
+
+.card > img {
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+.text > img {
+    border-radius: 50%;
+    margin-top: -3.3rem;
+    border: 5px solid white;
+}
+
+h2 {
+    color: var(--Very-Dark-Desaturated-Blue)
+}
+
+.text > p {
+    color: var(--Dark-Grayish-Blue)
+}
+
+h2 > span {
+    color: var(--Dark-Grayish-Blue)
+}
+
+.text-num{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgb(222, 221, 221);
+    padding:30px;
+    align-items: center;
+    flex-direction: row;
+}
+
+.text > p {
+    margin-top: 10px;
+    margin-bottom: 2rem;
+}
+
+.numbers {
+    color: var(--Very-Dark-Desaturated-Blue);
+    font-weight:700;
+}
+
+.text-num > div > p {
+    margin-top: 8px;
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--Dark-Grayish-Blue)
+}
